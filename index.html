@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 3</title>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     <section>
         <div>
             <label for="pokemons">ELige tu Pokemón</label>
-            <select id="pokemons" onchange="pokemonSelected(this.value)">
+            <select id="pokemons" onchange="console.log('URL seleccionada:', this.value); pokemonSelected(this.value)">
             <option value="">Select a Pokemon</option>
         </select>
         </div>
@@ -19,6 +20,10 @@
             <h1 id="pokemon-name"></h1>   
             <img id="pokemon-image">
             <ul id="pokemon-stats"></ul>
+
+            <!-- Habilidades -->
+            <h2>Habilidades</h2>
+            <ul id="pokemon-abilities"></ul>
         </div>
     </section>
 </body>
