@@ -10,15 +10,18 @@
 <body>
     <section>
         <div>
-            <label for="pokemons">ELige tu Pokemón</label>
+            <label for="pokemons">Elige tu Pokemón</label>
             <select id="pokemons" onchange="console.log('URL seleccionada:', this.value); pokemonSelected(this.value)">
-            <option value="">Select a Pokemon</option>
-        </select>
+                <option value="">Select a Pokemon</option>
+            </select>
         </div>
 
         <div id="pokemon-info">
             <h1 id="pokemon-name"></h1>   
-            <img id="pokemon-image">
+            <div class="image-container">
+                <img id="pokemon-image" alt="Pokemon">
+                <div id="pokemon-type-hover" class="type-hover"></div>
+            </div>
             <ul id="pokemon-stats"></ul>
 
             <!-- Habilidades -->
